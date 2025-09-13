@@ -1,0 +1,202 @@
+:root {
+    --my-primary-color: rgb(37, 170, 11); /* Light green */
+    --my-primary-darken-color: rgb(14, 179, 8); /* Dark green */
+    --my-primary-darkest-color: rgb(7, 172, 42); /* Darker green */
+}
+
+.my-bg {
+    background-color: var(--my-primary-color) !important;
+}
+
+.btn.my-bg:hover {
+    background-color: linear-gradient(to right, rgba(144, 238, 144, 0.8), rgba(34, 139, 34, 0.8));
+    filter: brightness(1.2);
+}
+
+.my-darken-bg {
+    background-color: var(--my-primary-darken-color);
+}
+
+.my-text-color {
+    color: var(--my-primary-color);
+}
+
+.logo img {
+    width: 20%;
+}
+
+.logo h1 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact .icon {
+    font-size: 1.5em;
+    color: var(--my-primary-color);
+    border: 2px dotted var(--my-primary-color);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.contact span {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.social .icon {
+    font-size: 1.5em;
+    color: var(--my-primary-color);
+    border: 2px dotted var(--my-primary-color);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.footer {
+    border-top: 3px solid var(--my-primary-darken-color);
+}
+
+.my-table td {
+    text-align: justify;
+}
+
+.hero-welcome {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: bottom;
+}
+.hero-welcome > .content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -100px;
+    left: 80px;
+}
+
+.hero-welcome::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.my-border {
+    border-color: var(--my-primary-color);
+    border-width: 3px;
+}
+
+.dot-border {
+    border-style: dotted;
+}
+
+.solid-border {
+    border-style: solid;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.box-icon {
+    padding: 10px;
+    border: 3px solid var(--my-primary-color);
+    width: fit-content;
+    height: fit-content;
+}
+.box-icon ~ span {
+    font-weight: 500;
+    color: var(--my-primary-color);
+}
+
+.layanan-icon {
+    color: white;
+    font-size: 2em;
+    background: var(--my-primary-color);
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.my-btn-outline {
+    background-color: white;
+    border-color: var(--my-primary-color);
+    color: var(--my-primary-color);
+}
+.my-btn-outline:hover {
+    background-color: var(--my-primary-color);
+    color: white;
+}
+
+.btn-rounded {
+    border-radius: 30px;
+}
+
+.testimoni {
+    background: rgba(34, 139, 34, 0.85);
+}
+.testimoni::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url("https://pkmkatapang.bandungkab.go.id/image/slider/website-puskesmas-katapang.png");
+    background-size: cover;
+}
+
+.testimoni .testimoni-name {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.darurat p {
+    font-weight: 500;
+    font-size: 1.1em;
+    max-width: 700px;
+}
+.darurat span {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#sidebar .sidebar-item.active a {
+    border-color: var(--my-primary-darken-color);
+}
+
+.page-item.paginate_button a {
+    color: var(--my-primary-color);
+    outline: none;
+}
+.page-item.paginate_button:hover a {
+    color: white;
+    background: var(--my-primary-color);
+}
+.page-item.paginate_button.active a {
+    color: white;
+    background: var(--my-primary-color);
+    border: none;
+}
+
+.btn-outline-light.my-btn {
+    border-width: 2px;
+    color: white !important;
+}
+
+.btn-outline-light.my-btn:hover {
+    background: white;
+    color: var(--my-primary-color) !important;
+}
